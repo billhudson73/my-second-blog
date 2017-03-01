@@ -1,0 +1,12 @@
+body {
+    padding-left: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 a {
+    color: #1a7226;
+}
+
+h2 a {
+    color: #7f9b84; 
+}

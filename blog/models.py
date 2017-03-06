@@ -9,6 +9,7 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+    fake_news = models.NullBooleanField()
 
     def publish(self):
         self.published_date = timezone.now()
@@ -16,3 +17,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+

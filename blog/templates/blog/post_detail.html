@@ -8,6 +8,9 @@
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
+        {% if post.fake_news %}
+            <h4>Warning: This post has been marked as F͕̯͇ͦ̄ͫ̉̄ͨ̆̀́͢Ḁ̣͒̋ͩͤ̅̆̀̚Kͧ͒̚͏͏̗͈͚̦̲ͅE̝̲̠̱̣̟ͣ̏͌̓ͦ̎͊̈́͞ ̨̞ͯͫN̞̍̌ͧͥͮE̡͚̮͇̖̣͕͎̖͋̄ͬW̞͈͉̩̬̞͕̼ͦ̔͐ͪ̀́͐͛͢S̶͔̝̜̹̣͇̜̹̣̊͒̃͑͋̏ͫͫ</h4>
+        {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
